@@ -1,0 +1,12 @@
+LDAPURI=ldap://192.168.180.116
+ErrorFile=/var/log/fds.err
+SQLServer=192.168.180.116
+SQLUser=fusedoorsystem
+SQLPassword=blah
+timeout=5
+doorOpenTimeout=5
+SQLTable=fusedoorsystem
+basedn=ou=Fuse,dc=studio,dc=fusefm,dc=co,dc=uk
+SearchGroups=Committee;Tech;TempDoorAccess
+SearchPresenterGroups=Presenters;News
+
