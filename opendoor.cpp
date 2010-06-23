@@ -6,6 +6,9 @@
 #include <signal.h>
 #include <fstream>
 #include <string.h>
+#include <unistd.h>
+#include <sys/cdefs.h>
+#include <sys/io.h>
 
 using namespace std;
 
