@@ -1,0 +1,8 @@
+project(doorlock)
+cmake_minimum_required(VERSION 2.6)
+set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake-modules/")
+find_package(OpenLDAP REQUIRED)
+find_package(MySQL REQUIRED)
+set(doorlock_SRCS ldap.cpp main.cpp misc.cpp parallel.cpp sql.cpp)
+add_executable(doorlock ${doorlock_SRCS})
+target_link_libraries(doorlock ${OpenLDAP_LIBRARY} ${MySQL_LIBRARY})
